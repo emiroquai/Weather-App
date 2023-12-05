@@ -1,4 +1,3 @@
-
 const API = (() => {
     async function getData(city) {
         try {
