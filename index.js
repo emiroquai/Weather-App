@@ -18,7 +18,7 @@ searchForm.addEventListener('submit' , async (e) => {
     if(city === "") return;
     const weatherData = await API.getData(city);
     Render(weatherData);
- 
+    searchInput.value = '';
 });
 
 
