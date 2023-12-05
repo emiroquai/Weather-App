@@ -5,7 +5,6 @@ const API = (() => {
             const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=3&aqi=no&alerts=no`);
             if (!response.ok) throw new Error(`City ${city} not found`);
             const weatherData = await response.json();
-            console.log(weatherData)
             return weatherData
         } catch (error) {
             console.error(error);
