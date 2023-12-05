@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
